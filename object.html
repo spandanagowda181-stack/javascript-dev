@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+  </head>
+  <body>
+     
+    <p>function example</p>
+    
+    
+    
+
+    
+    <script>
+      function greet(name){
+      console.log(`hello ${name}`);
+
+    }
+    greet('span');
+    function add(a,b){
+      return a+b;
+    }
+    console.log(add(1,5));
+    function person(name,age){
+      console.log(`name of the person is ${name} and age is ${age}`);
+    }
+    person('span',25);
+    function greet1(name1){
+      if(name1 ===undefined){
+        name1='hi there';
+      }
+      console.log(`hello ${name1}`);
+    }
+    greet1();
+    function Fahereheit(celsius){
+      console.log(`faherheit is ${(celsius*9/5)+32}`);
+      
+    }
+   
+    function celsius(Fahereheit){
+      console.log(`celsius is ${(Fahereheit-32)*5/9}`);
+    }
+    function convertTemperature(degrees,unit){
+      if(unit==='c'){
+        console.log(Fahereheit(degrees));
+      }
+      else if(unit==='f'){
+        console.log(celsius(degrees));
+      }
+      else{
+        console.log("invalid input");
+      }
+    }
+    convertTemperature(25,'c');
+    convertTemperature(86,'f');
+    function convertLength(length,from,to){
+      if(from==='miles' && to==='km'){
+        console.log(`${length} miles is equal to ${length*1.6} km`);
+      }
+      else if(from==='km' && to==='miles'){
+        console.log(`${length} km is equal to ${length/1.6} miles`);
+      }
+      else if (from===to){
+        console.log(`${length} ${from} is equal to ${length} ${to}`);
+
+        }
+      
+      else{
+        console.log('invalid input');
+      }
+    }
+    convertLength(50,'miles','km');
+    convertLength(32,'km','miles');
+    convertLength(50,'km','km');
+   
+
+   
+    
+    </script>
+  </body>
+</html>

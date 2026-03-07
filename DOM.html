@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+  </head>
+  <body>
+    <button>hello</button>
+    <input placeholder="cost" class="JS-example" onkeydown="console.log('typing')">
+    <p>DOM</p>
+    <script>
+      // Example: Log and modify title
+      document.title = "DOM example";
+      console.log(document.body.innerHTML); // Log current body content
+      
+      // Instead of replacing entire body, append or modify specific elements
+      const newButton = document.createElement('button');
+      newButton.textContent = 'click me';
+      document.body.appendChild(newButton);
+      
+      console.log(document.body.innerHTML); // Log updated body
+      console.log(document.querySelector('button').innerHTML); // First button's content
+      document.querySelector('button').innerHTML = 'hello'; // Modify first button
+      console.log(document.querySelector('button').innerHTML); // Log after change
+      console.log(window.document.body);
+      console.log(window.console);
+      console.log('window');
+      window.alert('welcome');
+      alert('morning');
+    </script>
+  </body>
+</html>

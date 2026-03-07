@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+  </head>
+  <body>
+     
+    <p>JSON</p>
+    
+    
+
+    
+    <script>
+      
+      const hello={
+        name:"lasya",
+        
+        skills:{
+          prog:"python",
+          cooking:"omblet"
+
+        },
+        fun:function greet(){
+          console.log('hello');
+          
+        },
+        age:19,
+        'time-management':'2-hour'
+      };
+      //JSON
+      /*const hello={
+        "name":"lasya",
+        
+        skills:{
+          "prog":"python",
+          "cooking":"omblet"
+
+        },
+        
+          
+        },
+        "age":19,
+        "time-management":"2-hour"
+      };*/
+      hello.name="sanjana"
+      
+      console.log(hello);
+      console.log(typeof hello);
+      console.log(JSON.stringify(hello));
+      console.log(typeof JSON.stringify(hello));
+      console.log(typeof JSON.stringify);//js object is converted into JSON string
+      // to convert JSON string to js object we should use JSON.parse()
+      console.log(JSON.parse(JSON.stringify(hello)));
+      console.log('hello'.length);
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+      console.log(2.3.toString());//auto-boxing
+      console.log( typeof 2.3.toString());
+      true.toString();
+      console.log(typeof true.toString());
+
+      
+
+      
+    </script>
+
+  </body>
+</html>

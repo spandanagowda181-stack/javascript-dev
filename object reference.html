@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Reference</title>
+  </head>
+  <body>
+     
+    <p>object reference</p>
+    
+    
+
+    
+    <script>
+      const ob1={
+        message:'hello'
+      }
+      const ob2=ob1;
+      const ob3={
+        message:'hello',
+        price:12
+      }
+      console.log(ob1===ob2);
+      console.log(ob3===ob1);
+      ob3.message='good morning';
+      //const message=ob3.message;
+      const{message,price}=ob3;
+      console.log(message,price);
+      const ob4={
+        name:'spandana',
+        age:15
+      }
+      const ob5={
+        name:'lasya',
+        age:19
+      }
+      console.log(ob4.name='sanjana');
+      //const name=ob4.name;
+      const{name}=ob4;
+      const{age}=ob4
+      console.log(name,age);
+      const ob6={
+        //name:name
+        name//shorthand
+      }
+      console.log(ob6)
+      const ob7={
+          methoud(){
+          console.log('hello');
+         }
+         
+      }
+      console.log(ob7)
+      ob7.methoud();
+      const ob8={
+        methoud1(){
+          console.log('goodmorning')
+        }
+      }
+      ob8.methoud1();
+      console.log(ob8.methoud1);
+
+   
+
+      
+    </script>
+
+  </body>
+</html>

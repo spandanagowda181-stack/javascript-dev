@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+  </head>
+  <body>
+     
+    <p>objects</p>
+    
+    
+
+    
+    <script>
+      const person={
+        name:"spandana",
+        age:14,
+        ["time-management"]:'2 hour'
+        // "time-management":2
+
+      }
+      console.log(person.name);
+      person.name="sanjana"
+      console.log(person.name);
+      person.gender="female"
+      console.log(person);
+      console.log(typeof person);
+      delete person.age
+      
+      console.log(person);
+      console.log(person["name"]);
+      //console.log(person.time-management); compiler will treat it as '_
+      console.log(person["time-management"]);
+      const hello={
+        name:"lasya",
+        
+        skills:{
+          prog:"python",
+          cooking:"omblet"
+
+        },
+        fun:function greet(){
+          console.log('hello');
+          
+        },
+        age:19
+      };
+      console.log(hello.skills.prog);
+      console.log(hello);
+      console.log(hello.fun);
+      console.log(typeof(hello.fun));
+      console.log(typeof(hello));
+      console.log(typeof(hello.skills))
+      console.log(typeof console);
+      console.log(typeof console.log);
+    </script>
+
+  </body>
+</html>
