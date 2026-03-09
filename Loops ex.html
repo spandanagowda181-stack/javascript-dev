@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+  </head>
+  <body>
+    <p>Loops</p>
+    <script>
+      /*var i=0;
+      while(i<=5){
+        console.log(i);
+        //i=i+1;
+        i++;
+      }*/
+     //break and continue
+     for(i=0;i<=5;i++){
+      
+      if(i===3){
+        break;
+      }
+      console.log(i);
+     }
+     console.log(' ');
+     for(i=0;i<=5;i++){
+      
+      if(i===3){
+        continue;
+      }
+      console.log(i);
+     }
+      console.log(' ');
+      //print numbers from 0 to 10 except multiples of 3
+      for(i=0;i<=10;i++){
+      
+      if(i%3===0){
+        continue;
+      }
+      console.log(i);
+     }
+     console.log(' ');
+      //print even numbers from 0 to 10
+      for(i=0;i<=10;i++){
+      
+      if(i%2!==0){
+        continue;
+      }
+      console.log(i);
+     }
+
+
+      
+      
+   
+
+      
+    </script>
+
+  </body>
+</html>
