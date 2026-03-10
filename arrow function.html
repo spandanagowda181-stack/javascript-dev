@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function</title>
+    <style>
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <script>
+        //normal function
+        const normalfunction=function(){
+            console.log('hello');
+        }
+        normalfunction();
+        //arrow function:it will do the same things that normal function do but it have some shorcuts
+        const arrowfunction=()=>{
+            console.log('hello1');
+        }
+        arrowfunction();
+        //shorthands
+        /*const arrowfunction1=(param)=>{
+            console.log(param);
+        }
+        arrowfunction1(4);
+        const arrowfunction1=(param)=>{
+            console.log(param);}
+             arrowfunction1(4);
+
+            */
+        
+        //if arrowfunction have only one parameter ,we can remove that bracket
+        const arrowfunction1=param=>{
+            console.log(param);
+        };
+        arrowfunction1(4);
+        /*
+        const arrowfunction2=(param1,param2)=>{
+            return param1+param2;
+        };
+        console.log(arrowfunction2(2,4));*/
+        //if function is only one line that can be put into a single line
+        const arrowfunction2=(param1,param2)=>
+             param1+param2;
+    
+        console.log(arrowfunction2(2,4));
+        
+    </script>
+  </body>
+</html>

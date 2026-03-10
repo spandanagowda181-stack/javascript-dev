@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advanced function</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <script>
+      /*
+      function greet(){
+        console.log('hello');
+      }
+      greet();
+      const fun1=function(){
+        console.log('hello everyone');
+      }
+      console.log( typeof fun1);
+       console.log(fun1);
+      fun1();
+      //function inside the object
+      const ob1={
+        num:2,
+        fun:function(){
+          console.log('hello');
+        }
+      }
+      console.log(ob1);
+      ob1.fun();
+      // passing the prameters into a function
+    function display(param){
+      console.log(param);
+    }
+    display(2);
+    function display2(param1,param2){
+      console.log(param1,param2);
+    }
+    display2(3,4);
+    //passing the function into another function
+    function run(param){
+      param();
+    }
+    run(function display(){
+      console.log('hello1');
+    })
+    function college(student){
+      student();
+
+    }
+    college(function holiday(){
+      console.log('need some academic break');
+    })
+      */
+     //setTimeout()
+     setTimeout(function(){
+      console.log('timeout');
+      console.log('timeout1');
+     },3000);
+     console.log('hello');
+      //setInterval
+      setInterval(function(){
+        console.log('interval');
+      },3000);
+      //.foreach()
+      [
+        'dishes',
+        'dinner',
+        'youtube'
+    ].forEach(function(value,index){
+        console.log(value);
+        console.log(index);
+      });
+      
+      
+    
+
+
+      
+
+
+
+    </script>
+  </body>
+</html>
