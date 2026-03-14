@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //regular function
+    function hthis(){
+      console.log(this);
+    }
+    hthis();
+    hthis.call('hello');
+    //pararmeters
+    function logthis(para1,para1){
+      console.log(this);
+    }
+    //logthis();
+    const h1="manu";
+    const g3="spandana";
+    console.log(logthis.call('good morning!',h1,g3));
+    //arrow function
+   [1,2,3].forEach(()=>{
+    console.log(this);
+   });
+
+  </script>
+  
+</body>
+</html>

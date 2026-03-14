@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>backend</title>
+</head>
+<body>
+  <script>
+    const xhr=new XMLHttpRequest();
+    xhr.addEventListener('load',()=>{
+      console.log(xhr.responce);
+    })
+    xhr.open('GET','https://supersimplebackend.dev/hello');
+     xhr.open('GET','https://supersimplebackend.dev/products/first');
+    xhr.send();
+
+
+  </script>
+  
+</body>
+</html>
